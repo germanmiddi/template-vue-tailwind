@@ -1,9 +1,12 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
+        orange: colors.orange,
         gray: {
           light: '#f5f5f5',
           lightfa: '#fafafa',
@@ -14,6 +17,7 @@ module.exports = {
           800: '#202b30',
         },
         black: {
+          000: '#000',
           333: '#333',
           666: '#666',
         },
@@ -32,6 +36,11 @@ module.exports = {
           600: '#5E35B1',
           700: '#512DA8',
           800: '#4527A0',
+        },
+        warning: {
+          400: '#FF7043',
+          500: '#FF5722',
+          700: '#ec683e',
         },        
       },
       fontFamily: {
